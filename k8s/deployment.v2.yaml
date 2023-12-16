@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: k3s-test-node-app-deployment
+  name: k3s-test-node-app-deployment 
   labels:
     app: k3s-test-node-app
 spec:
@@ -16,10 +16,10 @@ spec:
     spec:
       containers:
       - name: k3s-test-node-app
-        image: ghcr.io/vladagurets/k8s-test-node-app:v1.1.0
+        image: ghcr.io/vladagurets/k8s-test-node-app:v2.0
         env:
         - name: APP_VERSION
-          value: "1.0.0"
+          value: "2.0.0"
         ports:
         - containerPort: 3000
       imagePullSecrets:

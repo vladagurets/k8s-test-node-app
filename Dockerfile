@@ -18,5 +18,5 @@ EXPOSE 3000
 
 CMD [ "node", "server.js" ]
 
-# docker build -t k8s-test-node-app .
-# docker run -it -e APP_VERSION=1.0.0 -p 3000:3000 --name k8s-test-node-app k8s-test-node-app
+# docker build -t k8s-test-node-app:v1.0 .
+# docker run -it -e APP_VERSION=1.0.0 -p 3000:3000 --name k8s-test-node-app k8s-test-node-app:v1.0
